@@ -117,7 +117,7 @@ class OTP {
 
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
-        $mail->Subject = 'Here is the subject';
+        $mail->Subject = 'Here is your OTP';
         $mail->Body = 'This is your OTP: <b>' . $this->password . '</b>';
         $mail->AltBody = 'This is your OTP: ' . $this->password;
 

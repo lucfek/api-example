@@ -27,6 +27,7 @@ $user->firstname = isset($data->firstname) ? $data->firstname : "";
 $user->lastname = isset($data->lastname) ? $data->lastname : "";
 $user->phone = isset($data->phone) ? $data->phone : "";
 $user->password = isset($data->password) ? $data->password : "";
+$user->uuid = isset($data->uuid) ? $data->uuid : "";
 
 if($jwt){
     try {
@@ -76,7 +77,8 @@ if($jwt){
     echo json_encode(
         array(
             "message" => "User was updated",
-            "jwt" => $jwt
+            "jwt" => $jwt,
+            "user" => $user
         )
     );
 }else{

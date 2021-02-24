@@ -17,7 +17,7 @@ CREATE TABLE `api`.`users` (
 CREATE TABLE `api`.`otp` (
      `id` int(11) NOT NULL AUTO_INCREMENT,
      `user_email` varchar(255)  NOT NULL,
-     `tries` tinyint NOT NULL,
+     `tries` tinyint NOT NULL DEFAULT 0,
      `password` varchar(255) NOT NULL,
      `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
      `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,

@@ -101,9 +101,11 @@ class User {
 
 
         // Execute query
-        if(!$stmt->execute()) {
-            throw new ErrorException($stmt->error);
+        if($stmt->execute()){
+            return true;
         }
+
+        return false;
     }
 
     // Update User
@@ -135,10 +137,13 @@ class User {
         $stmt->bindParam(':phone', $this->phone);
         $stmt->bindParam(':uuid', $this->uuid);
 
+
         // Execute query
-        if(!$stmt->execute()) {
-            throw new ErrorException($stmt->error);
+        if($stmt->execute()){
+            return true;
         }
+
+        return false;
     }
 
 }
