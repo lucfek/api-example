@@ -1,0 +1,33 @@
+{
+	"name" : "technicalguru/utils",
+	"description" : "Basic classes for PHP development",
+	"type" : "library",
+	"keywords" : [
+		"framework",
+		"utils"
+	],
+	"license" : "LGPL-3.0-or-later",
+	"authors" : [{
+			"name" : "technicalguru",
+			"email" : "github@ralph-schuster.eu"
+		}
+	],
+	"require" : {
+		"php" : ">=7.0.0",
+		"technicalguru/i18n" : "~1"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"TgUtils\\" : "src/TgUtils/",
+			"TgLog\\" : "src/TgLog/"
+		}
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.0-dev"
+		}
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "^9"
+	}
+}

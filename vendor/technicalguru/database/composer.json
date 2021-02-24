@@ -1,0 +1,34 @@
+{
+	"name" : "technicalguru/database",
+	"description" : "A PHP library to access databases",
+	"type" : "library",
+	"keywords" : [
+		"database",
+		"datamodel",
+		"mysql",
+		"mariadb"
+	],
+	"license" : "LGPL-3.0-or-later",
+	"authors" : [{
+			"name" : "technicalguru",
+			"email" : "github@ralph-schuster.eu"
+		}
+	],
+	"require" : {
+		"php" : ">=7.0.0",
+		"technicalguru/utils" : "~1"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"TgDatabase\\" : "src/TgDatabase/"
+		}
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.0-dev"
+		}
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "^9"
+	}
+}

@@ -1,0 +1,34 @@
+{
+    "name": "technicalguru/i18n",
+    "description": "Provides localization features for PHP apps",
+    "type": "library",
+	"keywords" : [
+		"localization",
+		"internationalization",
+		"languages",
+		"multi-language"
+	],
+ 	"license" : "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "technicalguru",
+            "email": "github@ralph-schuster.eu"
+        }
+    ],
+	"require" : {
+		"php" : ">=7.0.0"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"TgI18n\\" : "src/TgI18n/"
+		}
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.0-dev"
+		}
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "^9"
+	}
+}

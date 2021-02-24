@@ -1,0 +1,10 @@
+{
+    "require": {
+        "firebase/php-jwt": "^5.2",
+      "ext-json": "*",
+      "ext-pdo": "*",
+        "technicalguru/email": "^1.0",
+        "respect/validation": "^2.2",
+        "phpmailer/phpmailer": "^6.3"
+    }
+}
